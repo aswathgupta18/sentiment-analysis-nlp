@@ -1,0 +1,32 @@
+{
+  "dataset": {
+    "rows": 2675,
+    "class_counts": {
+      "Negative": 934,
+      "Neutral": 593,
+      "Positive": 1148
+    },
+    "class_share_pct": {
+      "Negative": 34.9,
+      "Neutral": 22.2,
+      "Positive": 42.9
+    }
+  },
+  "train_size": 2140,
+  "test_size": 535,
+  "split": "80/20 stratified, random_state=42",
+  "best_model": "Naive Bayes",
+  "best_params": {
+    "clf__alpha": "0.1",
+    "tfidf__ngram_range": "(1, 2)"
+  },
+  "cv_f1_macro_best": 0.918,
+  "test_metrics": {
+    "accuracy": 0.9047,
+    "precision_macro": 0.9003,
+    "recall_macro": 0.8966,
+    "f1_macro": 0.8984
+  },
+  "inference_ms_per_review": 0.56,
+  "tfidf_max_features": 20000
+}
